@@ -1,17 +1,43 @@
-/*
-  This is a "Solution Style" tsconfig.json file, and is used by editors and TypeScript’s language server to improve development experience.
-  It is not intended to be used to perform a compilation.
-
-  To learn more about this file see: https://angular.io/config/solution-tsconfig.
-*/
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./src/tsconfig.app.json"
-    },
-    {
-      "path": "./src/tsconfig.spec.json"
-    }
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./build",
+    "allowJs": true,
+    "module": "commonjs",
+    "target": "es2018",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "include" : [
+    "data/**/*.ts",
+    "lib/**/*.ts",
+    "lib/**/*.js",
+    "models/**/*.ts",
+    "routes/**/*.ts",
+    "test/**/*.ts",
+    "views/**/*.ts",
+    "views/**/*.js",
+    "rsn/**/*.ts",
+    "*.ts",
+    "*.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "frontend",
+    "dist",
+    "build",
+    "vagrant",
+    "data/static/codefixes/**",
+    "**/*.d.ts",
+    ".eslintrc.js"
   ]
 }
