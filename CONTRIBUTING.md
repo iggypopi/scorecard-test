@@ -1,49 +1,31 @@
-# Table of Contents
----
+# Contributing [![GitHub contributors](https://img.shields.io/github/contributors/juice-shop/juice-shop.svg)](https://github.com/juice-shop/juice-shop/graphs/contributors) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
- * [Introduction](#intro)
- * [Code Repository](#repo)
- * [Bug Reports](#bug)
- * [Pull Requests](#pr)
- * [issues.nmap.org redirector](#issues)
- * [The HACKING file](#hacking)
+![CI/CD Pipeline](https://github.com/juice-shop/juice-shop/workflows/CI/CD%20Pipeline/badge.svg?branch=master)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/6206c8f3972bcc97a033/test_coverage)](https://codeclimate.com/github/juice-shop/juice-shop/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6206c8f3972bcc97a033/maintainability)](https://codeclimate.com/github/juice-shop/juice-shop/maintainability)
+![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/bkimminich/juice-shop.svg)
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/owasp-juice-shop/localized.svg)](https://crowdin.com/project/owasp-juice-shop)
+![GitHub issues by-label "help wanted"](https://img.shields.io/github/issues/juice-shop/juice-shop/help%20wanted.svg)
+![GitHub issues by-label "good first issue"](https://img.shields.io/github/issues/juice-shop/juice-shop/good%20first%20issue.svg)
+![Merge Chance](https://img.shields.io/endpoint?url=https%3A%2F%2Fmerge-chance.info%2Fbadge%3Frepo%3Djuice-shop/juice-shop)
 
-## <a name="intro"></a>Introduction
+## Code Contributions
 
-This file serves as a supplement to the [HACKING file](HACKING). It contains information specifically about Nmap's use of Github and how contributors can use Github services to participate in Nmap development.
+The minimum requirements for code contributions are:
 
-## <a name="repo"></a>Code Repository
+1. The code _must_ be compliant with the configured ESLint rules based on the [JS Standard Code Style](http://standardjs.com).
+2. All new and changed code _should_ have a corresponding unit and/or integration test.
+3. New and changed challenges _must_ have a corresponding e2e test.
+4. [Status checks](https://docs.github.com/en/github/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/about-status-checks) _must_ pass for the last commit within your PR.
+5. All Git commits within a PR _must_ be [signed off](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--s) to indicate the contributor's agreement with the [Developer Certificate of Origin](https://developercertificate.org/).
 
-The authoritative code repository is still the Subversion repository at [https://svn.nmap.org/nmap](https://svn.nmap.org/nmap). The Github repository is synchronized once per hour. All commits are made directly to Subversion, so Github is a read-only mirror.
+### Contribution Guidelines
 
-## <a name="bug"></a>Bug Reports
+You can find our detailed contribution guidelines over here:
 
-Nmap uses Github Issues to keep track of bug reports. Please be sure to include the version of Nmap that you are using, steps to reproduce the bug, and a description of what you expect to be the correct behavior.
+<https://pwning.owasp-juice.shop/part3/contribution.html>
 
-## <a name="pr"></a>Pull Requests
+## I18N Contributions
 
-Nmap welcomes your code contribution in the form of a Github Pull Request. Since the Github repository is currently read-only, we cannot merge directly from the PR. Instead, we will convert your PR into a patch and apply it to the Subversion repository. We will be sure to properly credit you in the CHANGELOG file, and the commit message will reference the PR number.
-
-Because not all Nmap committers use Github daily, it is helpful to send a
-notification email to [dev@nmap.org](mailto:dev@nmap.org) referencing the PR and including a short
-description of the functionality of the patch.
-
-Using pull requests has several advantages over emailed patches:
-
-1. It allows Travis CI build tests to run and check for code issues.
-
-2. Github's interface makes it easy to have a threaded discussion of code
-changes.
-
-3. Referencing contributions by PR number is more convenient than tracking by
-[seclists.org](http://seclists.org/) mail archive URL, especially when the discussion spans more than
-one quarter year.
-
-## <a name="issues"></a>issues.nmap.org redirector
-
-For convenience, you may use [issues.nmap.org](http://issues.nmap.org) to redirect to issues (bug reports and pull requests) by number (e.g. [http://issues.nmap.org/34](http://issues.nmap.org/34)) or to link to the new-issue page: [http://issues.nmap.org/new](http://issues.nmap.org/new).
-
-## <a name="hacking"></a>The HACKING file
-
-General information about hacking Nmap and engaging with our community of
-developers and users can be found in the [HACKING file](HACKING). It describes how to get started, licensing, style guidance, and how to use the dev mailing list.
+Learn all about our crowd-sourced [translation project on Crowdin](https://crowdin.com/project/owasp-juice-shop)
+here: <https://pwning.owasp-juice.shop/part3/translation.html>
